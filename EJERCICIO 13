@@ -1,0 +1,5 @@
+***Display the stocks which had "big-mover months", and how many of those months they had. Order your results from the stocks with the most, to least, "big-mover months".***
+
+SELECT ticker, COUNT(*) AS count FROM stock_prices
+WHERE ABS((close - open) / open) * 100 > 10 GROUP BY ticker
+ORDER BY count DESC;
