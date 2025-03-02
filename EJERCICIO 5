@@ -1,0 +1,3 @@
+***Use SQL's MAX command in this practice exercise, to find the highest Netflix stock (NFLX) ever opened at.***
+
+SELECT MAX(open) AS max FROM stock_prices WHERE ticker = 'NFLX';
