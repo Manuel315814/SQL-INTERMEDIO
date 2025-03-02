@@ -1,0 +1,5 @@
+***This SQL GROUP BY exercise uses real data from a LinkedIn SQL Interview question which is a bit too hard to tackle right now, so we'll solve an easier variant of the interview question.
+Suppose you are given a table of candidates and their skills. How many candidates possess each of the different skills? Sort your answers based on the count of candidates, from highest to lowest.***
+
+SELECT skill, COUNT(candidate_id) AS count FROM candidates
+GROUP BY skill ORDER BY count DESC;
